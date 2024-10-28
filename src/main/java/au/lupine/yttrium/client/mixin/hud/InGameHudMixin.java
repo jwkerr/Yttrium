@@ -24,7 +24,7 @@ public class InGameHudMixin {
         if (YttriumConfig.getInstance().renderSpectatorCrosshair) cir.setReturnValue(true);
     }
 
-    @ModifyVariable(method = "renderExperienceLevel", at = @At("STORE"), ordinal = 0)
+    @ModifyVariable(method = "renderExperienceBar", at = @At("STORE"), ordinal = 0)
     private String renderTotalExperience(String experienceString) {
         if (!YttriumConfig.getInstance().renderTotalExperience) return experienceString;
 

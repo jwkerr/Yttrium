@@ -22,9 +22,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class PlayerListHudMixin {
 
     @Shadow @Final private MinecraftClient client;
-
     @Shadow @Nullable private Text header;
-
     @Shadow @Nullable private Text footer;
 
     @ModifyConstant(constant = @Constant(longValue = 80L), method = "collectPlayerEntries")
