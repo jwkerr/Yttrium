@@ -1,4 +1,4 @@
-package au.lupine.yttrium.client.mixin.utility;
+package au.lupine.yttrium.client.mixin.misc;
 
 import au.lupine.yttrium.client.config.YttriumConfig;
 import net.minecraft.client.input.Input;
