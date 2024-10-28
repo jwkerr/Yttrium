@@ -47,6 +47,8 @@ public class PlayerListHudMixin {
         String headerString = YttriumConfig.getInstance().playerListHeader;
         if (headerString.isEmpty()) return;
 
+        if (headerString.equals("null")) this.header = null;
+
         Component component = MiniMessage.miniMessage().deserialize(headerString);
         this.header = FabricClientAudiences.of().toNative(component);
     }
@@ -55,6 +57,8 @@ public class PlayerListHudMixin {
     public void setFooter(Text footer, CallbackInfo ci) {
         String footerString = YttriumConfig.getInstance().playerListFooter;
         if (footerString.isEmpty()) return;
+
+        if (footerString.equals("null")) this.footer = null;
 
         Component component = MiniMessage.miniMessage().deserialize(footerString);
         this.footer = FabricClientAudiences.of().toNative(component);
