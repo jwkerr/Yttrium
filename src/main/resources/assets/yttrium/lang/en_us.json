@@ -1,0 +1,50 @@
+{
+  "yacl3.config.yttrium:config.category.cosmetic": "Cosmetic",
+
+  "yacl3.config.yttrium:config.category.cosmetic.group.flipEntities": "Flip Entities",
+  "yacl3.config.yttrium:config.flipSelf": "Flip Self",
+  "yacl3.config.yttrium:config.flipSelf.desc": "If enabled, your own player model will be flipped",
+  "yacl3.config.yttrium:config.flipOthers": "Flip Others",
+  "yacl3.config.yttrium:config.flipOthers.desc": "If enabled, player models of other players will be flipped",
+  "yacl3.config.yttrium:config.flipMobs": "Flip Mobs",
+  "yacl3.config.yttrium:config.flipMobs.desc": "If enabled, models of mobs will be flipped",
+
+  "yacl3.config.yttrium:config.category.cosmetic.group.modifyStars": "Modify Stars",
+  "yacl3.config.yttrium:config.starSeed": "Star Seed",
+  "yacl3.config.yttrium:config.starSeed.desc": "The seed used when generating stars in the sky",
+  "yacl3.config.yttrium:config.starCount": "Star Count",
+  "yacl3.config.yttrium:config.starCount.desc": "The number of stars that will be generated in the sky",
+
+
+  "yacl3.config.yttrium:config.category.hud": "HUD",
+
+  "yacl3.config.yttrium:config.category.hud.group.playerList": "Player List",
+  "yacl3.config.yttrium:config.maxPlayerListEntries": "Max Player List HUD Entries",
+  "yacl3.config.yttrium:config.maxPlayerListEntries.desc": "The maximum entries in the player list, set to 0 for no limit",
+  "yacl3.config.yttrium:config.maxPlayerListRows": "Max Player List HUD Rows",
+  "yacl3.config.yttrium:config.maxPlayerListRows.desc": "The maximum rows in the player list",
+  "yacl3.config.yttrium:config.playerListHeader": "Custom Player List Header",
+  "yacl3.config.yttrium:config.playerListHeader.desc": "Custom text to override the player list header, supports MiniMessage",
+  "yacl3.config.yttrium:config.playerListFooter": "Custom Player List Footer",
+  "yacl3.config.yttrium:config.playerListFooter.desc": "Custom text to override the player list footer, supports MiniMessage",
+
+  "yacl3.config.yttrium:config.category.hud.group.crosshair": "Crosshair",
+  "yacl3.config.yttrium:config.renderSpectatorCrosshair": "Render Spectator Crosshair",
+  "yacl3.config.yttrium:config.renderSpectatorCrosshair.desc": "If enabled, the crosshair will be rendered at all times when in spectator",
+  "yacl3.config.yttrium:config.modifyZAxisColour": "Modify Z Axis Colour",
+  "yacl3.config.yttrium:config.modifyZAxisColour.desc": "If enabled, the Z axis on the debug menu crosshair will be a pure blue in line with the other axes",
+
+  "yacl3.config.yttrium:config.category.hud.group.hotbar": "Hotbar",
+  "yacl3.config.yttrium:config.renderTotalExperience": "Render Total Experience",
+  "yacl3.config.yttrium:config.renderTotalExperience.desc": "If enabled, your experience level will have your total experience points shown next to it",
+
+
+  "yacl3.config.yttrium:config.category.misc": "Misc",
+
+  "yacl3.config.yttrium:config.clientBrand": "Client Brand",
+  "yacl3.config.yttrium:config.clientBrand.desc": "The string that your client will identify to servers as, leave blank for vanilla",
+  "yacl3.config.yttrium:config.removeFishingBobbersObstructingVision": "Remove Fishing Bobbers Obstructing Vision",
+  "yacl3.config.yttrium:config.removeFishingBobbersObstructingVision.desc": "If enabled, fishing bobbers that are inside your player's head will be hidden so they do not obstruct your vision",
+  "yacl3.config.yttrium:config.nullMovement": "Null Movement",
+  "yacl3.config.yttrium:config.nullMovement.desc": "If enabled, opposing movement keys (W and S, or A and D) will not cancel each other's movement"
+}

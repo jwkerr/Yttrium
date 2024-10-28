@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "yttrium",
+  "version": "${version}",
+  "name": "Yttrium",
+  "description": "An assortment of random tweaks and features",
+  "authors": [
+    {
+      "name": "Fruitloopins",
+      "contact": {
+        "discord": "fruitloopins"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://lupine.au",
+    "discord": "https://discord.gg/ey6ZvnwAJp",
+    "issues": "https://github.com/jwkerr/Yttrium/issues",
+    "sources": "https://github.com/jwkerr/Yttrium"
+  },
+  "license": "MIT",
+  "icon": "assets/yttrium/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "au.lupine.yttrium.client.YttriumClient"
+    ],
+    "modmenu": [
+      "au.lupine.yttrium.client.hook.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "yttrium.mixins.json"
+  ],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/ey6ZvnwAJp",
+        "modmenu.donate": "https://github.com/sponsors/jwkerr",
+        "modmenu.modrinth": "https://modrinth.com/mod/yttrium"
+      }
+    }
+  },
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": ">=1.20.4",
+    "yet_another_config_lib_v3": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "breaks": {
+    "tabby": "*",
+    "amanita": "*"
+  }
+}

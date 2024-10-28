@@ -1,0 +1,20 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "au.lupine.yttrium.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "cosmetic.LivingEntityRendererMixin",
+    "cosmetic.WorldRendererMixin",
+    "hud.GameRendererMixin",
+    "hud.GLXMixin",
+    "hud.InGameHudMixin",
+    "hud.PlayerListHudMixin",
+    "misc.ClientBrandRetrieverMixin",
+    "utility.FishingBobberEntityRendererMixin",
+    "utility.KeyboardInputMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
