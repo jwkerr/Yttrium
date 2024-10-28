@@ -11,8 +11,8 @@
     "hud.InGameHudMixin",
     "hud.PlayerListHudMixin",
     "misc.ClientBrandRetrieverMixin",
-    "utility.FishingBobberEntityRendererMixin",
-    "utility.KeyboardInputMixin"
+    "misc.FishingBobberEntityRendererMixin",
+    "misc.KeyboardInputMixin"
   ],
   "injectors": {
     "defaultRequire": 1
