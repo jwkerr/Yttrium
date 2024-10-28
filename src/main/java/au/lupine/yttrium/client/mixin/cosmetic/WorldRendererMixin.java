@@ -9,12 +9,12 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(WorldRenderer.class)
 public class WorldRendererMixin {
 
-    @ModifyConstant(method = "buildStarsBuffer", constant = @Constant(longValue = 10842L))
+    @ModifyConstant(method = "renderStars(Lnet/minecraft/client/render/BufferBuilder;)Lnet/minecraft/client/render/BufferBuilder$BuiltBuffer;", constant = @Constant(longValue = 10842L))
     private long modifyStarSeed(long seed) {
         return YttriumConfig.getInstance().starSeed;
     }
 
-    @ModifyConstant(method = "buildStarsBuffer", constant = @Constant(intValue = 1500))
+    @ModifyConstant(method = "renderStars(Lnet/minecraft/client/render/BufferBuilder;)Lnet/minecraft/client/render/BufferBuilder$BuiltBuffer;", constant = @Constant(intValue = 1500))
     private int modifyStarCount(int count) {
         return YttriumConfig.getInstance().starCount;
     }
