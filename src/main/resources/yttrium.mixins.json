@@ -4,6 +4,7 @@
   "package": "au.lupine.yttrium.client.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "cosmetic.Deadmau5FeatureRendererMixin",
     "cosmetic.LivingEntityRendererMixin",
     "cosmetic.WorldRendererMixin",
     "hud.GameRendererMixin",

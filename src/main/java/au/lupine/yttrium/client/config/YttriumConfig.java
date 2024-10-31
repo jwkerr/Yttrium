@@ -24,6 +24,7 @@ public class YttriumConfig {
 
     private static final String COSMETIC = "cosmetic";
     private static final String FLIP_ENTITIES = "flipEntities";
+    private static final String DEADMAU5_EARS = "deadmau5Ears";
     private static final String MODIFY_STARS = "modifyStars";
 
     private static final String HUD = "hud";
@@ -46,20 +47,27 @@ public class YttriumConfig {
     @SerialEntry
     @AutoGen(category = COSMETIC, group = FLIP_ENTITIES)
     @Boolean(colored = true)
-    @TickBox
     public boolean flipSelf = false;
 
     @SerialEntry
     @AutoGen(category = COSMETIC, group = FLIP_ENTITIES)
     @Boolean(colored = true)
-    @TickBox
     public boolean flipOthers = false;
 
     @SerialEntry
     @AutoGen(category = COSMETIC, group = FLIP_ENTITIES)
     @Boolean(colored = true)
-    @TickBox
     public boolean flipMobs = false;
+
+    @SerialEntry
+    @AutoGen(category = COSMETIC, group = DEADMAU5_EARS)
+    @Boolean(colored = true)
+    public boolean earsOnSelf = false;
+
+    @SerialEntry
+    @AutoGen(category = COSMETIC, group = DEADMAU5_EARS)
+    @Boolean(colored = true)
+    public boolean earsOnOthers = false;
 
     @SerialEntry
     @AutoGen(category = COSMETIC, group = MODIFY_STARS)
@@ -96,19 +104,16 @@ public class YttriumConfig {
     @SerialEntry
     @AutoGen(category = HUD, group = CROSSHAIR)
     @Boolean(colored = true)
-    @TickBox
     public boolean renderSpectatorCrosshair = true;
 
     @SerialEntry
     @AutoGen(category = HUD, group = CROSSHAIR)
     @Boolean(colored = true)
-    @TickBox
     public boolean modifyZAxisColour = true;
 
     @SerialEntry
     @AutoGen(category = HUD, group = HOTBAR)
     @Boolean(colored = true)
-    @TickBox
     public boolean renderTotalExperience = true;
 
     // Misc
@@ -121,12 +126,10 @@ public class YttriumConfig {
     @SerialEntry
     @AutoGen(category = MISC)
     @Boolean(colored = true)
-    @TickBox
     public boolean removeFishingBobbersObstructingVision = false;
 
     @SerialEntry
     @AutoGen(category = MISC)
     @Boolean(colored = true)
-    @TickBox
     public boolean nullMovement = true;
 }
