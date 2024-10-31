@@ -31,6 +31,7 @@ public class YttriumConfig {
     private static final String PLAYER_LIST = "playerList";
     private static final String CROSSHAIR = "crosshair";
     private static final String HOTBAR = "hotbar";
+    private static final String CHAT = "chat";
 
     private static final String MISC = "misc";
 
@@ -116,6 +117,11 @@ public class YttriumConfig {
     @Boolean(colored = true)
     public boolean renderTotalExperience = true;
 
+    @SerialEntry
+    @AutoGen(category = HUD, group = CHAT)
+    @Boolean(colored = true)
+    public boolean cancelScreenshotMessage = false;
+
     // Misc
 
     @SerialEntry
@@ -132,4 +138,9 @@ public class YttriumConfig {
     @AutoGen(category = MISC)
     @Boolean(colored = true)
     public boolean nullMovement = true;
+
+    @SerialEntry
+    @AutoGen(category = MISC)
+    @Boolean(colored = true)
+    public boolean playSoundOnScreenshot = false;
 }

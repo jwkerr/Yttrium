@@ -10,6 +10,7 @@
     "hud.GameRendererMixin",
     "hud.GLXMixin",
     "hud.InGameHudMixin",
+    "hud.KeyboardMixin",
     "hud.PlayerListHudMixin",
     "misc.ClientBrandRetrieverMixin",
     "misc.FishingBobberEntityRendererMixin",
