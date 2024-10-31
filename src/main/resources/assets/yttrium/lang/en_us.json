@@ -44,6 +44,12 @@
   "yacl3.config.yttrium:config.renderTotalExperience": "Render Total Experience",
   "yacl3.config.yttrium:config.renderTotalExperience.desc": "If enabled, your experience level will have your total experience points shown next to it",
 
+  "yacl3.config.yttrium:config.category.hud.group.chat": "Chat",
+  "yacl3.config.yttrium:config.cancelScreenshotMessage": "Cancel Screenshot Message",
+  "yacl3.config.yttrium:config.cancelScreenshotMessage.desc": "If enabled, no text will be sent in chat when taking a screenshot",
+  "yacl3.config.yttrium:config.playSoundOnScreenshot": "Play Sound On Screenshot",
+  "yacl3.config.yttrium:config.playSoundOnScreenshot.desc": "If enabled, a clicking sound will play when a screenshot is taken",
+
 
   "yacl3.config.yttrium:config.category.misc": "Misc",
 
