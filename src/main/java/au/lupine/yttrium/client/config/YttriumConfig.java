@@ -122,6 +122,11 @@ public class YttriumConfig {
     @Boolean(colored = true)
     public boolean cancelScreenshotMessage = false;
 
+    @SerialEntry
+    @AutoGen(category = HUD, group = CHAT)
+    @Boolean(colored = true)
+    public boolean playSoundOnScreenshot = false;
+
     // Misc
 
     @SerialEntry
@@ -138,9 +143,4 @@ public class YttriumConfig {
     @AutoGen(category = MISC)
     @Boolean(colored = true)
     public boolean nullMovement = true;
-
-    @SerialEntry
-    @AutoGen(category = MISC)
-    @Boolean(colored = true)
-    public boolean playSoundOnScreenshot = false;
 }
