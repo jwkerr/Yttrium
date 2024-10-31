@@ -1,0 +1,50 @@
+{
+  "yacl3.config.yttrium:config.category.cosmetic": "Косметика",
+
+  "yacl3.config.yttrium:config.category.cosmetic.group.flipEntities": "Перевернуть существа", 
+  "yacl3.config.yttrium:config.flipSelf": "Перевернуть себя", 
+  "yacl3.config.yttrium:config.flipSelf.desc": "Если включено, то ваша моделька игрока будет перевёрнута", 
+  "yacl3.config.yttrium:config.flipOthers": "Перевернуть других", 
+  "yacl3.config.yttrium:config.flipOthers.desc": "Если включено, то модельки других игроков будут перевёрнуты", 
+  "yacl3.config.yttrium:config.flipMobs": "Перевернуть мобов", 
+  "yacl3.config.yttrium:config.flipMobs.desc": "Если включено, то модельки мобов будут перевёрнуты", 
+
+  "yacl3.config.yttrium:config.category.cosmetic.group.modifyStars": "Модифицировать звёзды", 
+  "yacl3.config.yttrium:config.starSeed": "Сид звёзд", 
+  "yacl3.config.yttrium:config.starSeed.desc": "Сид, который будет использован при генерации звёзд в небе", 
+  "yacl3.config.yttrium:config.starCount": "Количество звёзд", 
+  "yacl3.config.yttrium:config.starCount.desc": "Количество звёзд, которое будет сгенерированно в небе", 
+
+
+  "yacl3.config.yttrium:config.category.hud": "HUD",
+
+  "yacl3.config.yttrium:config.category.hud.group.playerList": "Список Игроков",
+  "yacl3.config.yttrium:config.maxPlayerListEntries": "Максимальное Кол-во Игроков в ТАБе",
+  "yacl3.config.yttrium:config.maxPlayerListEntries.desc": "Максимальное Кол-во игроков отображаемое в ТАБе, установите 0 для отсутствия лимита",
+  "yacl3.config.yttrium:config.maxPlayerListRows": "Максимальное кол-во рядов в ТАБе", 
+  "yacl3.config.yttrium:config.maxPlayerListRows.desc": "Максимальное Кол-во рядов в списке игроков", 
+  "yacl3.config.yttrium:config.playerListHeader": "Уникальный Заголовок в ТАБе", 
+  "yacl3.config.yttrium:config.playerListHeader.desc": "Уникальное сообщение, переопределяющее заголовок в списке игроков, поддерживает MiniMessage", 
+  "yacl3.config.yttrium:config.playerListFooter": "Уникальный Ниж. Кол. в ТАБе", 
+  "yacl3.config.yttrium:config.playerListFooter.desc": "Уникальное сообщение, переопределяющее нижний колонтитул в списке игроков, поддерживает MiniMessage", 
+
+  "yacl3.config.yttrium:config.category.hud.group.crosshair": "Прицел",
+  "yacl3.config.yttrium:config.renderSpectatorCrosshair": "Рендер прицела в спектаторе",
+  "yacl3.config.yttrium:config.renderSpectatorCrosshair.desc": "Если включено, прицел будет показан всё время в режиме спектатора", 
+  "yacl3.config.yttrium:config.modifyZAxisColour": "Модивицировать цвет оси Z", 
+  "yacl3.config.yttrium:config.modifyZAxisColour.desc": "Если включено, ось Z на прицеле в меню отладки будет чисто синего цвета на одной линии с другими осями", 
+
+  "yacl3.config.yttrium:config.category.hud.group.hotbar": "Хотбар",
+  "yacl3.config.yttrium:config.renderTotalExperience": "Рендер общего числа опыта", 
+  "yacl3.config.yttrium:config.renderTotalExperience.desc": "Если включено, ваш уровень опыта будет иметь общее кол-во опыта рядом с ним", 
+
+
+  "yacl3.config.yttrium:config.category.misc": "Другое",
+
+  "yacl3.config.yttrium:config.clientBrand": "Название Клиента",
+  "yacl3.config.yttrium:config.clientBrand.desc": "Строка типа идентификации вашего клиента сервером, оставьте пустым для Vanilla", 
+  "yacl3.config.yttrium:config.removeFishingBobbersObstructingVision": "Удалить рыболовные поплавки, мешающие обзору", 
+  "yacl3.config.yttrium:config.removeFishingBobbersObstructingVision.desc": "Если включено, рыбные поплавки внутри вашей головы будут спрятаны чтобы не мешать вашему обзору", 
+  "yacl3.config.yttrium:config.nullMovement": "Нулевое движение", 
+  "yacl3.config.yttrium:config.nullMovement.desc": "Если включено, противоположные кнопки движения (W и S, A и D) не будут останавливать движение друг друга" 
+}

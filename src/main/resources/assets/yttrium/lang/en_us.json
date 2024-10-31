@@ -9,6 +9,12 @@
   "yacl3.config.yttrium:config.flipMobs": "Flip Mobs",
   "yacl3.config.yttrium:config.flipMobs.desc": "If enabled, models of mobs will be flipped",
 
+  "yacl3.config.yttrium:config.category.cosmetic.group.deadmau5Ears": "deadmau5 Ears",
+  "yacl3.config.yttrium:config.earsOnSelf": "Ears On Self",
+  "yacl3.config.yttrium:config.earsOnSelf.desc": "If enabled, your own player model will have deadmau5's ears",
+  "yacl3.config.yttrium:config.earsOnOthers": "Ears On Others",
+  "yacl3.config.yttrium:config.earsOnOthers.desc": "If enabled, player models of other players will have deadmau5's ears",
+
   "yacl3.config.yttrium:config.category.cosmetic.group.modifyStars": "Modify Stars",
   "yacl3.config.yttrium:config.starSeed": "Star Seed",
   "yacl3.config.yttrium:config.starSeed.desc": "The seed used when generating stars in the sky",
