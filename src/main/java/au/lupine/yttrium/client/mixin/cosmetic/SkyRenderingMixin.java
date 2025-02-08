@@ -1,20 +1,20 @@
 package au.lupine.yttrium.client.mixin.cosmetic;
 
 import au.lupine.yttrium.client.config.YttriumConfig;
-import net.minecraft.client.render.WorldRenderer;
+import net.minecraft.client.render.SkyRendering;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 
-@Mixin(WorldRenderer.class)
-public class WorldRendererMixin {
+@Mixin(SkyRendering.class)
+public class SkyRenderingMixin {
 
-    @ModifyConstant(method = "buildStarsBuffer", constant = @Constant(longValue = 10842L))
+    @ModifyConstant(method = "tessellateStar", constant = @Constant(longValue = 10842L))
     private long modifyStarSeed(long seed) {
         return YttriumConfig.getInstance().starSeed;
     }
 
-    @ModifyConstant(method = "buildStarsBuffer", constant = @Constant(intValue = 1500))
+    @ModifyConstant(method = "tessellateStar", constant = @Constant(intValue = 1500))
     private int modifyStarCount(int count) {
         return YttriumConfig.getInstance().starCount;
     }

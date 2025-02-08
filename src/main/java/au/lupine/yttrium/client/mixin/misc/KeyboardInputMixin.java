@@ -3,6 +3,7 @@ package au.lupine.yttrium.client.mixin.misc;
 import au.lupine.yttrium.client.config.YttriumConfig;
 import net.minecraft.client.input.Input;
 import net.minecraft.client.input.KeyboardInput;
+import net.minecraft.util.PlayerInput;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,13 +17,14 @@ public class KeyboardInputMixin extends Input {
     @Unique private boolean lastSideways;
 
     @Inject(method = "tick", at = @At("TAIL"))
-    private void afterTick(boolean slowDown, float slowDownFactor, CallbackInfo ci) {
+    private void afterTick(CallbackInfo ci) {
         if (!YttriumConfig.getInstance().nullMovement) return;
 
-        boolean forward = pressingForward;
-        boolean backward = pressingBack;
-        boolean left = pressingLeft;
-        boolean right = pressingRight;
+        PlayerInput input = playerInput;
+        boolean forward = input.forward();
+        boolean backward = input.backward();
+        boolean left = input.left();
+        boolean right = input.right();
 
         if (forward && !backward) {
             lastForward = true;
@@ -36,19 +38,13 @@ public class KeyboardInputMixin extends Input {
             lastSideways = false;
         }
 
-        if (forward && backward) {
-            movementForward = getMultiplier(lastForward);
-            if (slowDown) movementForward *= slowDownFactor;
-        }
+        if (forward && backward) movementForward = getMultiplier(lastForward);
 
-        if (left && right) {
-            movementSideways = getMultiplier(lastSideways);
-            if (slowDown) movementSideways *= slowDownFactor;
-        }
+        if (left && right) movementSideways = getMultiplier(lastSideways);
     }
 
     @Unique
     public float getMultiplier(boolean lastPressedWasPositive) {
-        return lastPressedWasPositive ? -1.0f : 1.0f;
+        return lastPressedWasPositive ? -1.0F : 1.0F;
     }
 }

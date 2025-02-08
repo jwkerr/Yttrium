@@ -1,7 +1,7 @@
 package au.lupine.yttrium.client.mixin.hud;
 
 import au.lupine.yttrium.client.config.YttriumConfig;
-import net.kyori.adventure.platform.fabric.FabricClientAudiences;
+import net.kyori.adventure.platform.modcommon.MinecraftClientAudiences;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.minecraft.client.MinecraftClient;
@@ -48,7 +48,7 @@ public class PlayerListHudMixin {
         if (headerString.equals("null")) this.header = null;
 
         Component component = MiniMessage.miniMessage().deserialize(headerString);
-        this.header = FabricClientAudiences.of().toNative(component);
+        this.header = MinecraftClientAudiences.of().asNative(component);
     }
 
     @Inject(method = "setFooter", at = @At("TAIL"))
@@ -59,6 +59,6 @@ public class PlayerListHudMixin {
         if (footerString.equals("null")) this.footer = null;
 
         Component component = MiniMessage.miniMessage().deserialize(footerString);
-        this.footer = FabricClientAudiences.of().toNative(component);
+        this.footer = MinecraftClientAudiences.of().asNative(component);
     }
 }

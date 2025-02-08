@@ -6,7 +6,7 @@
   "client": [
     "cosmetic.Deadmau5FeatureRendererMixin",
     "cosmetic.LivingEntityRendererMixin",
-    "cosmetic.WorldRendererMixin",
+    "cosmetic.SkyRenderingMixin",
     "hud.GameRendererMixin",
     "hud.GLXMixin",
     "hud.InGameHudMixin",
