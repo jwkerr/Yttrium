@@ -9,12 +9,12 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(SkyRendering.class)
 public class SkyRenderingMixin {
 
-    @ModifyConstant(method = "tessellateStar", constant = @Constant(longValue = 10842L))
+    @ModifyConstant(method = "createStars", constant = @Constant(longValue = 10842L))
     private long modifyStarSeed(long seed) {
         return YttriumConfig.getInstance().starSeed;
     }
 
-    @ModifyConstant(method = "tessellateStar", constant = @Constant(intValue = 1500))
+    @ModifyConstant(method = "createStars", constant = @Constant(intValue = 1500))
     private int modifyStarCount(int count) {
         return YttriumConfig.getInstance().starCount;
     }

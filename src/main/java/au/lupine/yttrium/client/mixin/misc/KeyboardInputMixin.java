@@ -4,6 +4,7 @@ import au.lupine.yttrium.client.config.YttriumConfig;
 import net.minecraft.client.input.Input;
 import net.minecraft.client.input.KeyboardInput;
 import net.minecraft.util.PlayerInput;
+import net.minecraft.util.math.Vec2f;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -26,21 +27,17 @@ public class KeyboardInputMixin extends Input {
         boolean left = input.left();
         boolean right = input.right();
 
-        if (forward && !backward) {
-            lastForward = true;
-        } else if (!forward && backward) {
-            lastForward = false;
-        }
+        if (forward ^ backward) lastForward = forward;
+        if (left ^ right) lastSideways = left;
 
-        if (left && !right) {
-            lastSideways = true;
-        } else if (!left && right) {
-            lastSideways = false;
-        }
+        float forwardValue = movementVector.y;
+        float sidewaysValue = movementVector.x;
 
-        if (forward && backward) movementForward = getMultiplier(lastForward);
+        if (forward && backward) forwardValue = getMultiplier(lastForward);
 
-        if (left && right) movementSideways = getMultiplier(lastSideways);
+        if (left && right) sidewaysValue = getMultiplier(lastSideways);
+
+        this.movementVector = new Vec2f(sidewaysValue, forwardValue);
     }
 
     @Unique
